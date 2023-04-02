@@ -1,0 +1,17 @@
+démarrer le serveur symfony : 
+symfony server:start 
+
+pour créer une entité : 
+php bin/console make:entity
+
+pour dropped une database
+php bin/console d:d:d
+
+pour faire ue ligirztio,
+php bin/console d:d:m
+
+doctrine fixtures load 
+php bin/console d:f:l
+
+Créer un controller
+php bin/console make:controller NomController

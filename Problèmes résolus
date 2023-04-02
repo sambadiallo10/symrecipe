@@ -5,10 +5,10 @@ il m'était impossible de créer la base de donné car la connexion pdo ne se fa
 pourtant l'extension pdo_mysql etait bien décommenté dans le php.ini
 mais la console utilisé un autre fichier php.ini dans lequel l'extension n'était pas décommenté
 
-episode 8
-
 Les fixtures = un jeu de fausses données qui permettent de tester l'application
 composer require --dev orm-fixtures 
 
 faker php permet de créer un  jeu de donnée plus réel 
 composer require fakerphp/faker --dev 
+
+episode 8 38:07
