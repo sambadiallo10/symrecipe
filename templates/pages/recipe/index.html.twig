@@ -7,7 +7,7 @@
         {# {% if not recipes.items is same as ([]) %} #}
         <h1>Mes Recettes</h1>
 
-        <a href="{{ path('ingredient.new') }}" class"btn btn-primary" >Créer une Recette</a>
+        <a href="{{ path('recipe.new') }}" class"btn btn-primary" >Créer une Recette</a>
          
 
         {# read and display just one flash message  type#}
@@ -29,7 +29,7 @@
                 <th scope="col">Edition</th>
                 <th scope="col">Suppression</th>
                 </tr>
-            </thead>
+            </thead>  
             <tbody>
                 {% for recipe in recipes %}
                     
@@ -39,8 +39,8 @@
                             <td>{{ (recipe.prix is same as (null)) ? 'Non renseigné' : recipe.prix }}</td>
                             <td>{{ (recipe.difficulty is same as (null)) ? 'Non renseigné' : recipe.difficulty }}</td>
                             <td>{{ recipe.createdAt|date('d/m/y') }}</td>
-                            <td><a href="{{ path('ingredient.edit', {'id' : recipe.id }) }}" class="btn btn-primary">Modifier</a></td>
-                            <td><a href="{{ path('ingredient.delete', {'id' : recipe.id }) }}" class="btn btn-primary">Supprimer</a></td>
+                            <td><a href="{{ path('recipe.edit', {'id' : recipe.id }) }}" class="btn btn-primary">Modifier</a></td>
+                            <td><a href="{{ path('recipe.delete', {'id' : recipe.id }) }}" class="btn btn-primary">Supprimer</a></td>
                             
                         </tr>
                     

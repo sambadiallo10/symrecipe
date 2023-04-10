@@ -15,3 +15,6 @@ php bin/console d:f:l
 
 Créer un controller
 php bin/console make:controller NomController
+
+Créer un formulaire
+php bin/console make:form 

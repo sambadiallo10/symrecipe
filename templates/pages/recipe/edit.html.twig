@@ -1,0 +1,70 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="mt-4">Modification de la recette</h1>
+         
+
+          {{ form_start(form) }}
+
+         <div class="form-group">
+            {{ form_label(form.name) }}
+            {{ form_widget(form.name) }}
+            <div class="form-error">
+                {{ form_errors(form.name) }}
+            </form>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.time) }}
+            {{ form_widget(form.time) }}
+            <div class="form-error">
+                {{ form_errors(form.time) }}
+            </form>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.nbPeople) }}
+            {{ form_widget(form.nbPeople) }}
+            <div class="form-error">
+                {{ form_errors(form.nbPeople) }}
+            </form>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.difficulty) }}
+            {{ form_widget(form.difficulty) }}
+            <div class="form-error">
+                {{ form_errors(form.difficulty) }}
+            </form>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.description) }}
+            {{ form_widget(form.description) }}
+            <div class="form-error">
+                {{ form_errors(form.description) }}
+            </form>
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.prix) }}
+            {{ form_widget(form.prix) }}
+            <div class="form-error">
+                {{ form_errors(form.prix) }}
+            </form>
+        </div>
+
+        <div class="form-check mt-4">
+            {{ form_label(form.isFavorite) }}
+            {{ form_widget(form.isFavorite) }}
+            <div class="form-error">
+                {{ form_errors(form.isFavorite) }}
+            </form>
+        </div>
+
+        {{ form_row(form.ingredient)}}
+
+         {{ form_end(form) }}
+    </div>
+{% endblock %}
